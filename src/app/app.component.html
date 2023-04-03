@@ -16,7 +16,7 @@
         <div class="form-floating">
           <select class="form-select" id="municipios" aria-label="Municipios" (change)="consultarMunicipios(municipios.value)" #municipios>
             <option value="" disabled selected="selected">Elija una opción</option>
-            <option *ngFor="let municipio of listaMunicipios" [value]="municipio.idDepartamento">{{ municipio.nombre }}</option>
+            <option *ngFor="let municipio of listaMunicipios" [value]="municipio.idMunicipio">{{ municipio.nombre }}</option>
           </select>
           <label for="municipios">Municipios</label>
         </div>

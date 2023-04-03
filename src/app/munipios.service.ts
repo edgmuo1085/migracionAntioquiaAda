@@ -1,8 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
-import { MunipioMigrado } from './interfaces/municipios-migrados.interface';
-import { ResponseMunicipios } from './interfaces/response-municipios.interface';
+import { MunipioMigrado, ResponseMunicipios } from './interfaces/response-municipios.interface';
 
 @Injectable({
   providedIn: 'root',
@@ -10,7 +9,7 @@ import { ResponseMunicipios } from './interfaces/response-municipios.interface';
 export class MunipiosService {
   constructor(private http: HttpClient) {}
 
-  getDeparmentos(): Observable<ResponseMunicipios> {
+  getCities(): Observable<any> {
     const headers = {
       Accept: '*/*',
       'Content-Type': 'text/plain',
@@ -18,9 +17,10 @@ export class MunipiosService {
       token: '22',
       Authorization: 'Basic dXQxalR4dFYxaDl5WG5adWozdzVWRjp4YVlhWlNrdUYmT0A=',
     };
-    let json = window.btoa('{}');
-    const url = `https://catastro.rionegro.gov.co/ApiRest/depto/consultafiltro/${json}`;
-    return this.http.get<ResponseMunicipios>(url, { headers: headers });
+    let filtro = { idDepartamento: 1 };
+    let json = window.btoa(JSON.stringify(filtro));
+    const url = `https://catastro.rionegro.gov.co/ApiRest/mun/consultafiltro/${json}`;
+    return this.http.get<any>(url, { headers: headers });
   }
 
   getMunicipiosMigrados(): Observable<MunipioMigrado[]> {

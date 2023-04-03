@@ -1,10 +1,10 @@
 [
   {
-    "idDepartamento": 29,
-    "nombre": "AMAZONAS"
+    "idMunicipio": 2,
+    "nombre": "ABEJORRAL"
   },
   {
-    "idDepartamento": 1,
-    "nombre": "ANTIOQUIA"
+    "idMunicipio": 19,
+    "nombre": "BELLO"
   }
 ]

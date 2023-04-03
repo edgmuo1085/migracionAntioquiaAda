@@ -6,8 +6,18 @@ export interface ResponseMunicipios {
 }
 
 export interface ListaMunipios {
+  idMunicipio: number;
   idDepartamento: number;
-  nombre: string;
   codigo: number;
+  nombre: string;
+  tipo: string;
+  latitud: string;
+  longitud: string;
+  codigoInternoSaymir: string;
   paginacion: boolean;
+}
+
+export interface MunipioMigrado {
+  idMunicipio: number;
+  nombre: string;
 }

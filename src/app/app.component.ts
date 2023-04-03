@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { Router } from '@angular/router';
 import { ListaMunipios } from './interfaces/response-municipios.interface';
 import { MunipiosService } from './munipios.service';
 
@@ -12,8 +11,8 @@ export class AppComponent {
   title = 'migracionAntioquiaAda';
   listaMunicipios: ListaMunipios[] = [];
 
-  constructor(private router: Router, private municipiosService: MunipiosService) {
-    this.municipiosService.getDeparmentos().subscribe({
+  constructor(private municipiosService: MunipiosService) {
+    this.municipiosService.getCities().subscribe({
       next: response => {
         if (!response.lstRespuesta) {
           return;
@@ -38,7 +37,7 @@ export class AppComponent {
           return;
         }
 
-        const encontrado = response.find(item => item.idDepartamento === +event);
+        const encontrado = response.find(item => item.idMunicipio === +event);
         if (encontrado) {
           console.log('sitio nuevo');
           (window as any).location = 'https://www.catastroantioquia.co/';

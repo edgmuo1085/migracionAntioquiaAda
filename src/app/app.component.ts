@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
+import { ListaMunipios } from './interfaces/response-municipios.interface';
 import { MunipiosService } from './munipios.service';
-import { ListaMunipios } from './response-municipios.interface';
 
 @Component({
   selector: 'app-root',

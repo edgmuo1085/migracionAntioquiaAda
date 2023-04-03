@@ -1,8 +1,8 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
-import { MunipioMigrado } from './municipios-migrados.interface';
-import { ResponseMunicipios } from './response-municipios.interface';
+import { MunipioMigrado } from './interfaces/municipios-migrados.interface';
+import { ResponseMunicipios } from './interfaces/response-municipios.interface';
 
 @Injectable({
   providedIn: 'root',

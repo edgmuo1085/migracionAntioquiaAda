@@ -1,1 +1,72 @@
 /* You can add global styles to this file, and also import other style files */
+:root {
+  --color-primary: #296031;
+  --color-secundary: #56abd6;
+  --color-warn: #efc31f;
+  --color-error: #dd4125;
+  --color-success: #2a6640;
+  --color-black-1: #272626;
+  --color-black-2: #747474;
+  --background: #f2f2f2;
+  --background-white: #fafafa;
+  --white: #ffffff;
+
+  /** background variables **/
+  --bg-block-1: #757171;
+  --bg-block-2: #757171;
+  --bg-color-button: #086030;
+  --color-custom-h2: #08733b;
+  --color-custom-h5: #ffffff;
+  --color-custom-a: #838286;
+  --color-custom-a-hover: #525153;
+  --color-title: #707070;
+  --color-button: #296031;
+  --color-button-1: #086030;
+  --box-shadow-border-1: 0 0 0 0.2rem rgb(72 180 97 / 50%);
+  --color-p: rgb(212, 3, 3);
+
+  /** antioquia **/
+  --background-color-green: #296031;
+  --background-color-green-1: #2e6d37;
+  --background-color-green-2: #367e41;
+  --background-color-green-3: #08733b;
+  --color-green-1: #ffffff;
+  --color-green-2: #575555;
+  --color-green-a-hover-1: #c4eeca;
+  --box-shadow-border-green-1: 0 0 0 0.2rem rgb(72 180 97 / 50%);
+}
+* {
+  box-sizing: border-box;
+  font-family: 'Nunito', sans-serif;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: Roboto, 'Helvetica Neue', sans-serif;
+}
+
+/* custom scroll bar  <- Con esto modificamos la barra de scroll para que parezca embebida */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--background-color-green-1);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--background-color-green-1);
+}

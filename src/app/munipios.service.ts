@@ -12,11 +12,8 @@ export class MunipiosService {
 
   getDeparmentos(): Observable<ResponseMunicipios> {
     const headers = {
-      'Content-Type': 'text/plain; charset=UTF-8',
-      Accept: 'text/plain, */*',
-      'access-control-allow-headers': 'Origin, X-Requested-With, Content-Type, Accept, token, Authorization',
-      'access-control-allow-methods': 'GET, PUT,POST,DELETE,OPTIONS,PATCH',
-      'access-control-allow-origin': '*',
+      Accept: '*/*',
+      'Content-Type': 'text/plain',
       appCode: '6',
       token: '22',
       Authorization: 'Basic dXQxalR4dFYxaDl5WG5adWozdzVWRjp4YVlhWlNrdUYmT0A=',

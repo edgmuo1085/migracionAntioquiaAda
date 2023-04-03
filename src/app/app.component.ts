@@ -40,10 +40,10 @@ export class AppComponent {
         const encontrado = response.find(item => item.idMunicipio === +event);
         if (encontrado) {
           console.log('sitio nuevo');
-          (window as any).location = 'https://www.catastroantioquia.co/';
+          //(window as any).location = 'https://www.catastroantioquia.co/';
         } else {
           console.log('sitio viejo');
-          (window as any).location = 'https://catastro.rionegro.gov.co/ControlRionegro/app/6';
+          //(window as any).location = 'https://catastro.rionegro.gov.co/ControlRionegro/app/6';
         }
       },
       error: err => {

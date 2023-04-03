@@ -22,7 +22,7 @@ export class MunipiosService {
       Authorization: 'Basic dXQxalR4dFYxaDl5WG5adWozdzVWRjp4YVlhWlNrdUYmT0A=',
     };
     let json = window.btoa('{}');
-    const url = `https://srv-appeon-000-w23.adacsc.co/ApiRest/depto/consultafiltro/${json}`;
+    const url = `https://catastro.rionegro.gov.co/ApiRest/depto/consultafiltro/${json}`;
     return this.http.get<ResponseMunicipios>(url, { headers: headers });
   }
 

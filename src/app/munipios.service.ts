@@ -9,7 +9,7 @@ import { MunipioMigrado, ResponseMunicipios } from './interfaces/response-munici
 export class MunipiosService {
   constructor(private http: HttpClient) {}
 
-  getCities(): Observable<any> {
+  getCities(): Observable<ResponseMunicipios> {
     const headers = {
       Accept: '*/*',
       'Content-Type': 'text/plain',
@@ -20,7 +20,7 @@ export class MunipiosService {
     let filtro = { idDepartamento: 1 };
     let json = window.btoa(JSON.stringify(filtro));
     const url = `https://catastro.rionegro.gov.co/ApiRest/mun/consultafiltro/${json}`;
-    return this.http.get<any>(url, { headers: headers });
+    return this.http.get<ResponseMunicipios>(url, { headers: headers });
   }
 
   getMunicipiosMigrados(): Observable<MunipioMigrado[]> {

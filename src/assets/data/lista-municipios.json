@@ -1,0 +1,805 @@
+{
+  "msgEstdo": "Consulta de municipio exitosa",
+  "estadoOperacion": true,
+  "fechaOperacion": "04/04/2023 17:22:21",
+  "lstRespuesta": [
+    {
+      "idMunicipio": 1,
+      "idDepartamento": 1,
+      "codigo": 1,
+      "nombre": "MEDELLIN",
+      "paginacion": false
+    },
+    {
+      "idMunicipio": 2,
+      "idDepartamento": 1,
+      "codigo": 2,
+      "nombre": "ABEJORRAL",
+      "paginacion": false
+    },
+    {
+      "idMunicipio": 3,
+      "idDepartamento": 1,
+      "codigo": 4,
+      "nombre": "ABRIAQUÍ",
+      "paginacion": false
+    },
+    {
+      "idMunicipio": 4,
+      "idDepartamento": 1,
+      "codigo": 21,
+      "nombre": "ALEJANDRÍA",
+      "paginacion": false
+    },
+    {
+      "idMunicipio": 5,
+      "idDepartamento": 1,
+      "codigo": 30,
+      "nombre": "AMAGA",
+      "paginacion": false
+    },
+    {
+      "idMunicipio": 6,
+      "idDepartamento": 1,
+      "codigo": 31,
+      "nombre": "AMALFI",
+      "paginacion": false
+    },
+    {
+      "idMunicipio": 7,
+      "idDepartamento": 1,
+      "codigo": 34,
+      "nombre": "ANDES",
+      "paginacion": false
+    },
+    {
+      "idMunicipio": 8,
+      "idDepartamento": 1,
+      "codigo": 36,
+      "nombre": "ANGELÓPOLIS",
+      "paginacion": false
+    },
+    {
+      "idMunicipio": 9,
+      "idDepartamento": 1,
+      "codigo": 38,
+      "nombre": "ANGOSTURA",
+      "paginacion": false
+    },
+    {
+      "idMunicipio": 10,
+      "idDepartamento": 1,
+      "codigo": 40,
+      "nombre": "ANORÍ",
+      "paginacion": false
+    },
+    {
+      "idMunicipio": 11,
+      "idDepartamento": 1,
+      "codigo": 42,
+      "nombre": "SANTA FE DE ANTIOQUIA",
+      "paginacion": false
+    },
+    {
+      "idMunicipio": 12,
+      "idDepartamento": 1,
+      "codigo": 44,
+      "nombre": "ANZÁ",
+      "paginacion": false
+    },
+    {
+      "idMunicipio": 13,
+      "idDepartamento": 1,
+      "codigo": 45,
+      "nombre": "APARTADÓ",
+      "paginacion": false
+    },
+    {
+      "idMunicipio": 14,
+      "idDepartamento": 1,
+      "codigo": 51,
+      "nombre": "ARBOLETES",
+      "paginacion": false
+    },
+    {
+      "idMunicipio": 15,
+      "idDepartamento": 1,
+      "codigo": 55,
+      "nombre": "ARGELIA",
+      "paginacion": false
+    },
+    {
+      "idMunicipio": 16,
+      "idDepartamento": 1,
+      "codigo": 59,
+      "nombre": "ARMENIA",
+      "paginacion": false
+    },
+    {
+      "idMunicipio": 18,
+      "idDepartamento": 1,
+      "codigo": 86,
+      "nombre": "BELMIRA",
+      "paginacion": false
+    },
+    {
+      "idMunicipio": 20,
+      "idDepartamento": 1,
+      "codigo": 91,
+      "nombre": "BETANIA",
+      "paginacion": false
+    },
+    {
+      "idMunicipio": 21,
+      "idDepartamento": 1,
+      "codigo": 93,
+      "nombre": "BETULIA",
+      "paginacion": false
+    },
+    {
+      "idMunicipio": 22,
+      "idDepartamento": 1,
+      "codigo": 101,
+      "nombre": "CIUDAD BOLÍVAR",
+      "paginacion": false
+    },
+    {
+      "idMunicipio": 23,
+      "idDepartamento": 1,
+      "codigo": 107,
+      "nombre": "BRICEÑO",
+      "paginacion": false
+    },
+    {
+      "idMunicipio": 24,
+      "idDepartamento": 1,
+      "codigo": 113,
+      "nombre": "BURITICÁ",
+      "paginacion": false
+    },
+    {
+      "idMunicipio": 25,
+      "idDepartamento": 1,
+      "codigo": 120,
+      "nombre": "CÁCERES",
+      "paginacion": false
+    },
+    {
+      "idMunicipio": 26,
+      "idDepartamento": 1,
+      "codigo": 125,
+      "nombre": "CAICEDO",
+      "paginacion": false
+    },
+    {
+      "idMunicipio": 27,
+      "idDepartamento": 1,
+      "codigo": 129,
+      "nombre": "CALDAS",
+      "paginacion": false
+    },
+    {
+      "idMunicipio": 28,
+      "idDepartamento": 1,
+      "codigo": 134,
+      "nombre": "CAMPAMENTO",
+      "paginacion": false
+    },
+    {
+      "idMunicipio": 29,
+      "idDepartamento": 1,
+      "codigo": 138,
+      "nombre": "CAÑASGORDAS",
+      "paginacion": false
+    },
+    {
+      "idMunicipio": 30,
+      "idDepartamento": 1,
+      "codigo": 142,
+      "nombre": "CARACOLÍ",
+      "paginacion": false
+    },
+    {
+      "idMunicipio": 31,
+      "idDepartamento": 1,
+      "codigo": 145,
+      "nombre": "CARAMANTA",
+      "paginacion": false
+    },
+    {
+      "idMunicipio": 32,
+      "idDepartamento": 1,
+      "codigo": 147,
+      "nombre": "CAREPA",
+      "paginacion": false
+    },
+    {
+      "idMunicipio": 34,
+      "idDepartamento": 1,
+      "codigo": 150,
+      "nombre": "CAROLINA",
+      "paginacion": false
+    },
+    {
+      "idMunicipio": 35,
+      "idDepartamento": 1,
+      "codigo": 154,
+      "nombre": "CAUCASIA",
+      "paginacion": false
+    },
+    {
+      "idMunicipio": 36,
+      "idDepartamento": 1,
+      "codigo": 172,
+      "nombre": "CHIGORODÓ",
+      "paginacion": false
+    },
+    {
+      "idMunicipio": 37,
+      "idDepartamento": 1,
+      "codigo": 190,
+      "nombre": "CISNEROS",
+      "paginacion": false
+    },
+    {
+      "idMunicipio": 38,
+      "idDepartamento": 1,
+      "codigo": 197,
+      "nombre": "COCORNÁ",
+      "paginacion": false
+    },
+    {
+      "idMunicipio": 39,
+      "idDepartamento": 1,
+      "codigo": 206,
+      "nombre": "CONCEPCIÓN",
+      "paginacion": false
+    },
+    {
+      "idMunicipio": 40,
+      "idDepartamento": 1,
+      "codigo": 209,
+      "nombre": "CONCORDIA",
+      "paginacion": false
+    },
+    {
+      "idMunicipio": 42,
+      "idDepartamento": 1,
+      "codigo": 234,
+      "nombre": "DABEIBA",
+      "paginacion": false
+    },
+    {
+      "idMunicipio": 43,
+      "idDepartamento": 1,
+      "codigo": 237,
+      "nombre": "DON MATÍAS",
+      "paginacion": false
+    },
+    {
+      "idMunicipio": 44,
+      "idDepartamento": 1,
+      "codigo": 240,
+      "nombre": "EBÉJICO",
+      "paginacion": false
+    },
+    {
+      "idMunicipio": 45,
+      "idDepartamento": 1,
+      "codigo": 250,
+      "nombre": "EL BAGRE",
+      "paginacion": false
+    },
+    {
+      "idMunicipio": 46,
+      "idDepartamento": 1,
+      "codigo": 264,
+      "nombre": "ENTRERRIOS",
+      "paginacion": false
+    },
+    {
+      "idMunicipio": 48,
+      "idDepartamento": 1,
+      "codigo": 282,
+      "nombre": "FREDONIA",
+      "paginacion": false
+    },
+    {
+      "idMunicipio": 49,
+      "idDepartamento": 1,
+      "codigo": 284,
+      "nombre": "FRONTINO",
+      "paginacion": false
+    },
+    {
+      "idMunicipio": 50,
+      "idDepartamento": 1,
+      "codigo": 306,
+      "nombre": "GIRALDO",
+      "paginacion": false
+    },
+    {
+      "idMunicipio": 52,
+      "idDepartamento": 1,
+      "codigo": 310,
+      "nombre": "GÓMEZ PLATA",
+      "paginacion": false
+    },
+    {
+      "idMunicipio": 53,
+      "idDepartamento": 1,
+      "codigo": 313,
+      "nombre": "GRANADA",
+      "paginacion": false
+    },
+    {
+      "idMunicipio": 54,
+      "idDepartamento": 1,
+      "codigo": 315,
+      "nombre": "GUADALUPE",
+      "paginacion": false
+    },
+    {
+      "idMunicipio": 55,
+      "idDepartamento": 1,
+      "codigo": 318,
+      "nombre": "GUARNE",
+      "paginacion": false
+    },
+    {
+      "idMunicipio": 56,
+      "idDepartamento": 1,
+      "codigo": 321,
+      "nombre": "GUATAPÉ",
+      "paginacion": false
+    },
+    {
+      "idMunicipio": 57,
+      "idDepartamento": 1,
+      "codigo": 347,
+      "nombre": "HELICONIA",
+      "paginacion": false
+    },
+    {
+      "idMunicipio": 58,
+      "idDepartamento": 1,
+      "codigo": 353,
+      "nombre": "HISPANIA",
+      "paginacion": false
+    },
+    {
+      "idMunicipio": 59,
+      "idDepartamento": 1,
+      "codigo": 360,
+      "nombre": "ITAGUÍ",
+      "paginacion": false
+    },
+    {
+      "idMunicipio": 60,
+      "idDepartamento": 1,
+      "codigo": 361,
+      "nombre": "ITUANGO",
+      "paginacion": false
+    },
+    {
+      "idMunicipio": 61,
+      "idDepartamento": 1,
+      "codigo": 364,
+      "nombre": "JARDÍN",
+      "paginacion": false
+    },
+    {
+      "idMunicipio": 62,
+      "idDepartamento": 1,
+      "codigo": 368,
+      "nombre": "JERICÓ",
+      "paginacion": false
+    },
+    {
+      "idMunicipio": 63,
+      "idDepartamento": 1,
+      "codigo": 376,
+      "nombre": "LA CEJA",
+      "paginacion": false
+    },
+    {
+      "idMunicipio": 65,
+      "idDepartamento": 1,
+      "codigo": 390,
+      "nombre": "LA PINTADA",
+      "paginacion": false
+    },
+    {
+      "idMunicipio": 66,
+      "idDepartamento": 1,
+      "codigo": 400,
+      "nombre": "LA UNIÓN",
+      "paginacion": false
+    },
+    {
+      "idMunicipio": 67,
+      "idDepartamento": 1,
+      "codigo": 411,
+      "nombre": "LIBORINA",
+      "paginacion": false
+    },
+    {
+      "idMunicipio": 68,
+      "idDepartamento": 1,
+      "codigo": 425,
+      "nombre": "MACEO",
+      "paginacion": false
+    },
+    {
+      "idMunicipio": 69,
+      "idDepartamento": 1,
+      "codigo": 440,
+      "nombre": "MARINILLA",
+      "paginacion": false
+    },
+    {
+      "idMunicipio": 70,
+      "idDepartamento": 1,
+      "codigo": 467,
+      "nombre": "MONTEBELLO",
+      "paginacion": false
+    },
+    {
+      "idMunicipio": 71,
+      "idDepartamento": 1,
+      "codigo": 475,
+      "nombre": "MURINDO",
+      "paginacion": false
+    },
+    {
+      "idMunicipio": 72,
+      "idDepartamento": 1,
+      "codigo": 480,
+      "nombre": "MUTATÁ",
+      "paginacion": false
+    },
+    {
+      "idMunicipio": 73,
+      "idDepartamento": 1,
+      "codigo": 483,
+      "nombre": "NARIÑO",
+      "paginacion": false
+    },
+    {
+      "idMunicipio": 74,
+      "idDepartamento": 1,
+      "codigo": 490,
+      "nombre": "NECOCLÍ",
+      "paginacion": false
+    },
+    {
+      "idMunicipio": 75,
+      "idDepartamento": 1,
+      "codigo": 495,
+      "nombre": "NECHÍ",
+      "paginacion": false
+    },
+    {
+      "idMunicipio": 76,
+      "idDepartamento": 1,
+      "codigo": 501,
+      "nombre": "OLAYA",
+      "paginacion": false
+    },
+    {
+      "idMunicipio": 77,
+      "idDepartamento": 1,
+      "codigo": 541,
+      "nombre": "EL PEÑOL",
+      "paginacion": false
+    },
+    {
+      "idMunicipio": 78,
+      "idDepartamento": 1,
+      "codigo": 543,
+      "nombre": "PEQUE",
+      "paginacion": false
+    },
+    {
+      "idMunicipio": 79,
+      "idDepartamento": 1,
+      "codigo": 576,
+      "nombre": "PUEBLORRICO",
+      "paginacion": false
+    },
+    {
+      "idMunicipio": 80,
+      "idDepartamento": 1,
+      "codigo": 579,
+      "nombre": "PUERTO BERRIO",
+      "paginacion": false
+    },
+    {
+      "idMunicipio": 81,
+      "idDepartamento": 1,
+      "codigo": 585,
+      "nombre": "PUERTO NARE",
+      "paginacion": false
+    },
+    {
+      "idMunicipio": 82,
+      "idDepartamento": 1,
+      "codigo": 591,
+      "nombre": "PUERTO TRIUNFO",
+      "paginacion": false
+    },
+    {
+      "idMunicipio": 83,
+      "idDepartamento": 1,
+      "codigo": 604,
+      "nombre": "REMEDIOS",
+      "paginacion": false
+    },
+    {
+      "idMunicipio": 86,
+      "idDepartamento": 1,
+      "codigo": 628,
+      "nombre": "SABANALARGA",
+      "paginacion": false
+    },
+    {
+      "idMunicipio": 88,
+      "idDepartamento": 1,
+      "codigo": 642,
+      "nombre": "SALGAR",
+      "paginacion": false
+    },
+    {
+      "idMunicipio": 89,
+      "idDepartamento": 1,
+      "codigo": 647,
+      "nombre": "SAN ANDRES DE CUERQUIA",
+      "paginacion": false
+    },
+    {
+      "idMunicipio": 90,
+      "idDepartamento": 1,
+      "codigo": 649,
+      "nombre": "SAN CARLOS",
+      "paginacion": false
+    },
+    {
+      "idMunicipio": 91,
+      "idDepartamento": 1,
+      "codigo": 652,
+      "nombre": "SAN FRANCISCO",
+      "paginacion": false
+    },
+    {
+      "idMunicipio": 92,
+      "idDepartamento": 1,
+      "codigo": 656,
+      "nombre": "SAN JERONIMO",
+      "paginacion": false
+    },
+    {
+      "idMunicipio": 93,
+      "idDepartamento": 1,
+      "codigo": 658,
+      "nombre": "SAN JOSÉ DE LA MONTAÑA",
+      "paginacion": false
+    },
+    {
+      "idMunicipio": 94,
+      "idDepartamento": 1,
+      "codigo": 659,
+      "nombre": "SAN JUAN DE URABÁ",
+      "paginacion": false
+    },
+    {
+      "idMunicipio": 95,
+      "idDepartamento": 1,
+      "codigo": 660,
+      "nombre": "SAN LUIS",
+      "paginacion": false
+    },
+    {
+      "idMunicipio": 96,
+      "idDepartamento": 1,
+      "codigo": 664,
+      "nombre": "SAN PEDRO DE LOS MILAGROS",
+      "paginacion": false
+    },
+    {
+      "idMunicipio": 97,
+      "idDepartamento": 1,
+      "codigo": 665,
+      "nombre": "SAN PEDRO DE URABÁ",
+      "paginacion": false
+    },
+    {
+      "idMunicipio": 98,
+      "idDepartamento": 1,
+      "codigo": 667,
+      "nombre": "SAN RAFAEL",
+      "paginacion": false
+    },
+    {
+      "idMunicipio": 99,
+      "idDepartamento": 1,
+      "codigo": 670,
+      "nombre": "SAN ROQUE",
+      "paginacion": false
+    },
+    {
+      "idMunicipio": 101,
+      "idDepartamento": 1,
+      "codigo": 679,
+      "nombre": "SANTA BÁRBARA",
+      "paginacion": false
+    },
+    {
+      "idMunicipio": 102,
+      "idDepartamento": 1,
+      "codigo": 686,
+      "nombre": "SANTA ROSA DE OSOS",
+      "paginacion": false
+    },
+    {
+      "idMunicipio": 103,
+      "idDepartamento": 1,
+      "codigo": 690,
+      "nombre": "SANTO DOMINGO",
+      "paginacion": false
+    },
+    {
+      "idMunicipio": 104,
+      "idDepartamento": 1,
+      "codigo": 697,
+      "nombre": "EL SANTUARIO",
+      "paginacion": false
+    },
+    {
+      "idMunicipio": 105,
+      "idDepartamento": 1,
+      "codigo": 736,
+      "nombre": "SEGOVIA",
+      "paginacion": false
+    },
+    {
+      "idMunicipio": 106,
+      "idDepartamento": 1,
+      "codigo": 756,
+      "nombre": "SONSÓN",
+      "paginacion": false
+    },
+    {
+      "idMunicipio": 107,
+      "idDepartamento": 1,
+      "codigo": 761,
+      "nombre": "SOPETRÁN",
+      "paginacion": false
+    },
+    {
+      "idMunicipio": 108,
+      "idDepartamento": 1,
+      "codigo": 789,
+      "nombre": "TÁMESIS",
+      "paginacion": false
+    },
+    {
+      "idMunicipio": 109,
+      "idDepartamento": 1,
+      "codigo": 790,
+      "nombre": "TARAZÁ",
+      "paginacion": false
+    },
+    {
+      "idMunicipio": 110,
+      "idDepartamento": 1,
+      "codigo": 792,
+      "nombre": "TARSO",
+      "paginacion": false
+    },
+    {
+      "idMunicipio": 111,
+      "idDepartamento": 1,
+      "codigo": 809,
+      "nombre": "TITIRIBÍ",
+      "paginacion": false
+    },
+    {
+      "idMunicipio": 112,
+      "idDepartamento": 1,
+      "codigo": 819,
+      "nombre": "TOLEDO",
+      "paginacion": false
+    },
+    {
+      "idMunicipio": 113,
+      "idDepartamento": 1,
+      "codigo": 837,
+      "nombre": "TURBO",
+      "paginacion": false
+    },
+    {
+      "idMunicipio": 114,
+      "idDepartamento": 1,
+      "codigo": 842,
+      "nombre": "URAMITA",
+      "paginacion": false
+    },
+    {
+      "idMunicipio": 115,
+      "idDepartamento": 1,
+      "codigo": 847,
+      "nombre": "URRAO",
+      "paginacion": false
+    },
+    {
+      "idMunicipio": 116,
+      "idDepartamento": 1,
+      "codigo": 854,
+      "nombre": "VALDIVIA",
+      "paginacion": false
+    },
+    {
+      "idMunicipio": 117,
+      "idDepartamento": 1,
+      "codigo": 856,
+      "nombre": "VALPARAÍSO",
+      "paginacion": false
+    },
+    {
+      "idMunicipio": 118,
+      "idDepartamento": 1,
+      "codigo": 858,
+      "nombre": "VEGACHÍ",
+      "paginacion": false
+    },
+    {
+      "idMunicipio": 119,
+      "idDepartamento": 1,
+      "codigo": 861,
+      "nombre": "VENECIA",
+      "paginacion": false
+    },
+    {
+      "idMunicipio": 120,
+      "idDepartamento": 1,
+      "codigo": 873,
+      "nombre": "VIGÍA DEL FUERTE",
+      "paginacion": false
+    },
+    {
+      "idMunicipio": 121,
+      "idDepartamento": 1,
+      "codigo": 885,
+      "nombre": "YALÍ",
+      "paginacion": false
+    },
+    {
+      "idMunicipio": 122,
+      "idDepartamento": 1,
+      "codigo": 887,
+      "nombre": "YARUMAL",
+      "paginacion": false
+    },
+    {
+      "idMunicipio": 123,
+      "idDepartamento": 1,
+      "codigo": 890,
+      "nombre": "YOLOMBÓ",
+      "paginacion": false
+    },
+    {
+      "idMunicipio": 124,
+      "idDepartamento": 1,
+      "codigo": 893,
+      "nombre": "YONDÓ",
+      "paginacion": false
+    },
+    {
+      "idMunicipio": 125,
+      "idDepartamento": 1,
+      "codigo": 895,
+      "nombre": "ZARAGOZA",
+      "paginacion": false
+    }
+  ]
+}

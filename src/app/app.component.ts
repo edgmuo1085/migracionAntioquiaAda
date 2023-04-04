@@ -33,6 +33,7 @@ export class AppComponent {
   consultarMunicipios(event: string) {
     this.municipiosService.getMunicipiosMigrados().subscribe({
       next: response => {
+        console.log(response);
         if (!response.length) {
           return;
         }

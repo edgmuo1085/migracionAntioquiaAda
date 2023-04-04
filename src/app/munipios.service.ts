@@ -24,6 +24,11 @@ export class MunipiosService {
   }
 
   getMunicipiosMigrados(): Observable<MunipioMigrado[]> {
+    const headers = {
+      Accept: '*/*',
+      'Content-Type': 'text/plain',
+    };
+    //return this.http.get<any>('http://localhost/municipios-listos.json', { headers: headers, responseType: 'blob' as 'json' });
     return this.http.get<MunipioMigrado[]>('./assets/data/municipios-listos.json');
   }
 }

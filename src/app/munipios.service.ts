@@ -24,11 +24,6 @@ export class MunipiosService {
   }
 
   getMunicipiosMigrados(): Observable<MunipioMigrado[]> {
-    const headers = {
-      Accept: '*/*',
-      'Content-Type': 'text/plain',
-    };
-    //return this.http.get<any>('http://localhost/municipios-listos.json', { headers: headers, responseType: 'blob' as 'json' });
-    return this.http.get<MunipioMigrado[]>('./assets/data/municipios-listos.json');
+    return this.http.get<MunipioMigrado[]>('https://srv-appeon-000-w23.adacsc.co/municipiosApi/municipio/listar');
   }
 }

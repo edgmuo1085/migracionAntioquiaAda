@@ -18,6 +18,7 @@ export interface ListaMunipios {
 }
 
 export interface MunipioMigrado {
+  id: number;
   idMunicipio: number;
   nombre: string;
 }

@@ -5,14 +5,31 @@
     </a>
   </div>
 </nav>
-<div class="wrapper" [ngStyle]="{ background: 'url(./assets/image/bg.png)' }">
-  <div class="container-fluid">
+<div
+  class="wrapper"
+  [ngStyle]="{
+    'background-image': 'url(./assets/image/bg.png)'
+  }"
+>
+  <div class="container-fluid mt-5">
     <div class="row d-flex justify-content-center col-12">
-      <p class="text-center">Seleccione el municipio del cual va a comprar un certificado.</p>
+      <hgroup>
+        <h1 class="text-center title-1">¡BIENVENIDOS!</h1>
+        <h4 class="text-center subtitle-1">Nos encontramos en proceso de</h4>
+        <h4 class="text-center subtitle-1 bg-green-ligth">modernización de nuestro portal.</h4>
+      </hgroup>
     </div>
 
-    <div class="row justify-content-center">
-      <div class="col-12 col-md-3 col-lg-3">
+    <div class="row justify-content-center mt-5">
+      <div class="col-12 col-sm-8 col-md-5 col-lg-5">
+        <p class="text-center parrafo-1">
+          En caso de requerir un Certificado de Ficha Predial o un Certificado de Plano Catastral por favor seleccione el municipio
+        </p>
+      </div>
+    </div>
+
+    <div class="row justify-content-center mt-3">
+      <div class="col-12 col-sm-5 col-md-5 col-lg-4">
         <div class="form-floating">
           <select class="form-select" id="municipios" aria-label="Municipios" (change)="consultarMunicipios(municipios.value)" #municipios>
             <option value="" disabled selected="selected">Elija una opción</option>
@@ -20,6 +37,25 @@
           </select>
           <label for="municipios">Municipios</label>
         </div>
+      </div>
+    </div>
+
+    <div class="row justify-content-center mt-5">
+      <div class="col-12 col-md-8 text-center">
+        <p class="text-center info-boton">Si requiere un Certificado de poseer o no poseer bienes.</p>
+        <a href="#" class="boton-poseer">Haga clic aquí</a>
+      </div>
+    </div>
+
+    <div class="row justify-content-center mt-5">
+      <div class="col-12 col-sm-5 col-md-5">
+        <ul class="enlaces">
+          <li><a target="_blank" href="https://www.antioquia.gov.co">www.antioquia.gov.co</a></li>
+          <li><a target="_blank" href="https://www.catastroantioquia.co">www.catastroantioquia.co</a></li>
+        </ul>
+      </div>
+      <div class="col-12 col-sm-5 col-md-5 img-footer">
+        <img [src]="'assets/image/logo-sin-catastro.png'" width="270px" height="92px" alt="antioquia" />
       </div>
     </div>
   </div>

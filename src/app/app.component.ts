@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { ListaMunipios } from './interfaces/response-municipios.interface';
 import { MunipiosService } from './munipios.service';
+import { TIPO_URL } from './interfaces/cod-interno.enum';
 
 @Component({
   selector: 'app-root',
@@ -10,8 +11,59 @@ import { MunipiosService } from './munipios.service';
 export class AppComponent {
   title = 'migracionAntioquiaAda';
   listaMunicipios: ListaMunipios[] = [];
+  urlBase: string = '';
+  urlSiteNew: string = '';
+  urlSiteOld: string = '';
 
   constructor(private municipiosService: MunipiosService) {
+    this.municipiosService.retornarComercio(TIPO_URL.SEARCH_CITIES_MIGRATE).subscribe({
+      next: response => {
+        if (!response.lstRespuesta) {
+          return;
+        }
+
+        if (!response.lstRespuesta.length) {
+          return;
+        }
+
+        this.urlBase = response.lstRespuesta[0].valor;
+      },
+      error: err => {
+        console.error(err);
+      },
+    });
+    this.municipiosService.retornarComercio(TIPO_URL.URL_MIGRATE_SITE_NEW).subscribe({
+      next: response => {
+        if (!response.lstRespuesta) {
+          return;
+        }
+
+        if (!response.lstRespuesta.length) {
+          return;
+        }
+
+        this.urlSiteNew = response.lstRespuesta[0].valor;
+      },
+      error: err => {
+        console.error(err);
+      },
+    });
+    this.municipiosService.retornarComercio(TIPO_URL.URL_MIGRATE_SITE_OLD).subscribe({
+      next: response => {
+        if (!response.lstRespuesta) {
+          return;
+        }
+
+        if (!response.lstRespuesta.length) {
+          return;
+        }
+
+        this.urlSiteOld = response.lstRespuesta[0].valor;
+      },
+      error: err => {
+        console.error(err);
+      },
+    });
     this.municipiosService.getCities().subscribe({
       next: response => {
         if (!response.lstRespuesta) {
@@ -31,7 +83,7 @@ export class AppComponent {
   }
 
   consultarMunicipios(event: string) {
-    this.municipiosService.getMunicipiosMigrados().subscribe({
+    this.municipiosService.getMunicipiosMigrados(this.urlBase).subscribe({
       next: response => {
         if (!response.length) {
           return;
@@ -40,15 +92,34 @@ export class AppComponent {
         const encontrado = response.find(item => item.idMunicipio === +event);
         if (encontrado) {
           console.log('sitio nuevo');
-          (window as any).location = 'https://www.catastroantioquia.co/';
-        } else {
-          console.log('sitio viejo');
-          (window as any).location = 'https://www.catastroantioquia.co/';
+          this.getRedirectTo(this.urlSiteNew);
+          return;
         }
+
+        console.log('sitio viejo');
+        this.getRedirectTo(this.urlSiteOld);
       },
       error: err => {
         console.error(err);
       },
     });
+  }
+
+  getRedirectTo(url: string) {
+    const aLink = document.createElement('a');
+    aLink.href = url;
+    aLink.setAttribute('target', '_parent');
+    document.body.appendChild(aLink);
+    aLink.click();
+    document.body.removeChild(aLink);
+  }
+
+  submitPosesionBienes() {
+    const aLink = document.createElement('a');
+    aLink.href = this.urlSiteOld;
+    aLink.setAttribute('target', '_parent');
+    document.body.appendChild(aLink);
+    aLink.click();
+    document.body.removeChild(aLink);
   }
 }

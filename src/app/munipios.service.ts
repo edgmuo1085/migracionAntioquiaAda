@@ -1,7 +1,8 @@
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { MunipioMigrado, ResponseMunicipios } from './interfaces/response-municipios.interface';
+import { ResponseApiRest } from './interfaces/api-rest.interface';
 
 @Injectable({
   providedIn: 'root',
@@ -14,7 +15,17 @@ export class MunipiosService {
     return this.http.get<ResponseMunicipios>(url);
   }
 
-  getMunicipiosMigrados(): Observable<MunipioMigrado[]> {
-    return this.http.get<MunipioMigrado[]>('https://srv-appeon-000-w23.adacsc.co/municipiosApi/municipio/listar');
+  getMunicipiosMigrados(urlBase: string): Observable<MunipioMigrado[]> {
+    const headers = new HttpHeaders().set('content-type', 'application/json');
+    return this.http.get<MunipioMigrado[]>(`${urlBase}/municipio/listar`, { headers });
+  }
+
+  retornarComercio(codInterno: string): Observable<ResponseApiRest> {
+    const data = { codInterno: codInterno };
+    const json = window.btoa(JSON.stringify(data));
+    const headers = new HttpHeaders().set('content-type', 'text/plain').set('appCode', '6');
+    return this.http.get<ResponseApiRest>(`http://10.0.200.131:8080/ApiRest/param/consultafiltro/${json}`, {
+      headers,
+    });
   }
 }

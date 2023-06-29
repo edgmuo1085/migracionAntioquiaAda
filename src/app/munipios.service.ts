@@ -3,6 +3,7 @@ import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { MunipioMigrado, ResponseMunicipios } from './interfaces/response-municipios.interface';
 import { ResponseApiRest } from './interfaces/api-rest.interface';
+import { FacturaSaymir } from './interfaces/factura.interface';
 
 @Injectable({
   providedIn: 'root',
@@ -30,6 +31,16 @@ export class MunipiosService {
     const json = window.btoa(JSON.stringify(data));
     const headers = new HttpHeaders().set('content-type', 'text/plain').set('appCode', '6');
     return this.http.get<ResponseApiRest>(`${this.ipDom}/ApiRest/param/consultafiltro/${json}`, {
+      headers,
+    });
+  }
+
+  consultar(factura: number): Observable<FacturaSaymir> {
+    const url = `http://smr.rionegro.gov.co:8040/documentos/SMRFactura/api/consultar/${factura}`;
+    const headers = new HttpHeaders()
+      .set('content-type', 'application/json')
+      .set('Authorization', 'Basic ZXZvbHV0aW9uOisrNHAxMjBzcDE4YnQmU01S');
+    return this.http.get<FacturaSaymir>(`${url}`, {
       headers,
     });
   }

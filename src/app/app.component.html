@@ -60,3 +60,32 @@
     </div>
   </div>
 </div>
+
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col-12 text-center">Llamar saymir</div>
+  </div>
+  <div class="row justify-content-center">
+    <div class="col-12 text-center">
+      <button (click)="llamar()">Llamar</button>
+    </div>
+  </div>
+  <div class="row justify-content-center">
+    <div class="col-6 text-center">
+      <table class="table">
+        <thead>
+          <th>factura</th>
+          <th>estado</th>
+        </thead>
+        <tbody>
+          <ng-container *ngFor="let item of facturas">
+            <tr>
+              <td>{{ item.factura.nroFactura }}</td>
+              <td>{{ item.factura.estado }}</td>
+            </tr>
+          </ng-container>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>

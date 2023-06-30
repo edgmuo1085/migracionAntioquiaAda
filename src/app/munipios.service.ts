@@ -39,7 +39,7 @@ export class MunipiosService {
     const url = `http://smr.rionegro.gov.co:8040/documentos/SMRFactura/api/consultar/${factura}`;
     const headers = new HttpHeaders()
       .set('content-type', 'application/json')
-      .set('Authorization', 'Basic ZXZvbHV0aW9uOisrNHAxMjBzcDE4YnQmU01S');
+      .set('Authorization', 'Basic sssssssssssssssssssssssssssssdddddddddddddddd');
     return this.http.get<FacturaSaymir>(`${url}`, {
       headers,
     });

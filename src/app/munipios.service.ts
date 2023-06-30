@@ -11,7 +11,7 @@ export class MunipiosService {
   ipPub: string = 'http://141.148.95.161';
   ipPrepro: string = 'http://10.0.200.131:8080';
   ipDev: string = 'http://10.0.200.160:8080';
-  ipDom: string = 'http://serviciosdigitales.catastroantioquia.co';
+  ipDom: string = 'https://serviciosdigitales.catastroantioquia.co';
 
   constructor(private http: HttpClient) {}
 

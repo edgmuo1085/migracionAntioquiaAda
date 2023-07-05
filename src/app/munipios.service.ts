@@ -36,10 +36,10 @@ export class MunipiosService {
   }
 
   consultar(factura: number): Observable<FacturaSaymir> {
+    const data = `evolution:++4p120sp18bt&SMR`;
+    const base64 = window.btoa(data);
     const url = `http://smr.rionegro.gov.co:8040/documentos/SMRFactura/api/consultar/${factura}`;
-    const headers = new HttpHeaders()
-      .set('content-type', 'application/json')
-      .set('Authorization', 'Basic sssssssssssssssssssssssssssssdddddddddddddddd');
+    const headers = new HttpHeaders().set('content-type', 'application/json').set('Authorization', `Basic ${base64}`);
     return this.http.get<FacturaSaymir>(`${url}`, {
       headers,
     });

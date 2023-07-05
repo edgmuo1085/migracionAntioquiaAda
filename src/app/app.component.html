@@ -74,12 +74,14 @@
     <div class="col-6 text-center">
       <table class="table">
         <thead>
+          <th>#</th>
           <th>factura</th>
           <th>estado</th>
         </thead>
         <tbody>
-          <ng-container *ngFor="let item of facturas">
+          <ng-container *ngFor="let item of facturas; let i = index">
             <tr>
+              <td>{{ i + 1 }}</td>
               <td>{{ item.factura.nroFactura }}</td>
               <td>{{ item.factura.estado }}</td>
             </tr>

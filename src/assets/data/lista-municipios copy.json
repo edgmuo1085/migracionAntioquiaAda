@@ -4,6 +4,13 @@
   "fechaOperacion": "04/04/2023 17:22:21",
   "lstRespuesta": [
     {
+      "idMunicipio": 1,
+      "idDepartamento": 1,
+      "codigo": 1,
+      "nombre": "MEDELLIN",
+      "paginacion": false
+    },
+    {
       "idMunicipio": 2,
       "idDepartamento": 1,
       "codigo": 2,
@@ -421,6 +428,13 @@
       "idDepartamento": 1,
       "codigo": 425,
       "nombre": "MACEO",
+      "paginacion": false
+    },
+    {
+      "idMunicipio": 69,
+      "idDepartamento": 1,
+      "codigo": 440,
+      "nombre": "MARINILLA",
       "paginacion": false
     },
     {

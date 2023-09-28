@@ -14,6 +14,7 @@ export class AppComponent {
   urlBase: string = '';
   urlSiteNew: string = '';
   urlSiteOld: string = '';
+  urlSiteBtn: string = '';
 
   constructor(private municipiosService: MunipiosService) {
     this.municipiosService.retornarComercio(TIPO_URL.SEARCH_CITIES_MIGRATE).subscribe({
@@ -43,6 +44,7 @@ export class AppComponent {
         }
 
         this.urlSiteNew = response.lstRespuesta[0].valor;
+        this.urlSiteBtn = response.lstRespuesta[0].valor;
       },
       error: err => {
         console.error(err);
@@ -91,12 +93,10 @@ export class AppComponent {
 
         const encontrado = response.find(item => item.idMunicipio === +event);
         if (encontrado) {
-          console.log('sitio nuevo');
           this.getRedirectTo(this.urlSiteNew);
           return;
         }
 
-        console.log('sitio viejo');
         this.getRedirectTo(this.urlSiteOld);
       },
       error: err => {
@@ -108,15 +108,6 @@ export class AppComponent {
   getRedirectTo(url: string) {
     const aLink = document.createElement('a');
     aLink.href = url;
-    aLink.setAttribute('target', '_parent');
-    document.body.appendChild(aLink);
-    aLink.click();
-    document.body.removeChild(aLink);
-  }
-
-  submitPosesionBienes() {
-    const aLink = document.createElement('a');
-    aLink.href = this.urlSiteNew;
     aLink.setAttribute('target', '_parent');
     document.body.appendChild(aLink);
     aLink.click();

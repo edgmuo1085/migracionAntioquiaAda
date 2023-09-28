@@ -116,7 +116,7 @@ export class AppComponent {
 
   submitPosesionBienes() {
     const aLink = document.createElement('a');
-    aLink.href = this.urlSiteOld;
+    aLink.href = this.urlSiteNew;
     aLink.setAttribute('target', '_parent');
     document.body.appendChild(aLink);
     aLink.click();
